@@ -1,0 +1,15 @@
+// base.dir - определение базового и производного классов
+
+using std::cout;
+
+struct base {
+	void fun (int i) {
+		cout << "\n base::i = " << i;
+	}
+};
+
+struct dir : public base {
+	void fun (int i) {
+		cout << "\n dir::i = " << i; 
+	}
+};
