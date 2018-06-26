@@ -1,0 +1,28 @@
+//template.vec - шаблон векторов
+
+	// Т - параметр шаблона
+	template <class T> 
+		class Vector {
+			// начало одномерного массива
+			T *data; 
+			
+			// количество элементов в массиве
+			int size; 
+		
+		public:
+			// конструктор класса vector
+			Vector(int); 
+			
+			// деструктор
+			~Vector() { delete[] data; } 
+
+			// расширение действия (перегрузка) операции "[]":
+			T& operator[] (int i) { return data[i]; }
+		};
+
+	// внешнее определение конструктора класса:
+	template <class T>
+		Vector <T>::Vector(int n) { 
+			data = new T[n];
+			size = n;
+		};
