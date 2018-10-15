@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
 char cc[] = "Число"; // массив автоматической памяти
-float pi = 3.1415926; // переменная типа float
+float pi = 3.14; // переменная типа float
 
 cout << "Обращение по внешнему имени: pi = " << pi;
 
