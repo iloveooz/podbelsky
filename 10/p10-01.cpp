@@ -80,6 +80,8 @@
 					tag = 0;
 					rad = ri;
 					// определить размеры битового образа:
+					size = imagesize(xi - ri, yi - ri, xi + ri, yi + ri);					
+					// Выделить память для битового образа: 
 					pspot = new char [size];
 				}
 			// деструктор класса SPOT
